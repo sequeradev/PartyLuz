@@ -4,7 +4,7 @@ Luces de discoteca estáticas que cambian al ritmo de la música que reproduces 
 
 ## ▶ Usar ahora
 
-**https://sequeradev.github.io/PartyLuz/**
+**https://party-luz.vercel.app**
 
 Ábrelo en **Chrome o Edge** (Firefox no soporta la captura de audio del sistema). No hace falta instalar nada.
 
