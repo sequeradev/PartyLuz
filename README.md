@@ -1,15 +1,21 @@
-# PartyLuz 🟠
+# PartyLuz 🟢
 
-Luces de discoteca estáticas que cambian al ritmo de la música que reproduces en **otra aplicación** (Spotify, YouTube, etc.). Interfaz de estilo industrial con modo pantalla completa para ver solo las luces.
+Luces de discoteca estáticas que cambian al ritmo de la música que reproduces en **otra aplicación** (Spotify, YouTube, etc.). Interfaz industrial minimalista en negro, blanco y verde eléctrico, con modo pantalla completa para ver solo las luces.
 
-## Uso
+## ▶ Usar ahora
+
+**https://sequeradev.github.io/PartyLuz/**
+
+Ábrelo en **Chrome o Edge** (Firefox no soporta la captura de audio del sistema). No hace falta instalar nada.
+
+## Uso local
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abre `http://localhost:5173` en **Chrome o Edge** (Firefox no soporta la captura de audio del sistema).
+Abre `http://localhost:5173` en **Chrome o Edge**.
 
 1. Pulsa **CAPTURAR AUDIO DEL SISTEMA**.
 2. En el diálogo del navegador, elige la pestaña o pantalla donde suena la música y **activa la casilla «Compartir audio»** (imprescindible).
