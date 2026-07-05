@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PartyLuz</title>
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        PARTY<span class="brand-accent">LUZ</span>
+      </div>
+      <div class="status-block">
+        <span id="statusLed" class="led led-off"></span>
+        <span id="statusText">OFF</span>
+      </div>
+      <button id="fsBtn" class="btn btn-fs" title="Pantalla completa (ESC para salir)">⛶</button>
+    </header>
+
+    <aside id="controls">
+      <section class="ctrl-section">
+        <h2 class="ctrl-title">AUDIO</h2>
+        <button id="captureBtn" class="btn btn-primary" title="Elige la ventana o pestaña donde suena la música y activa «Compartir audio»">▶ CAPTURAR</button>
+        <button id="micBtn" class="btn btn-secondary">MICRÓFONO</button>
+        <button id="stopBtn" class="btn btn-danger" disabled>■ DETENER</button>
+      </section>
+
+      <section class="ctrl-section">
+        <h2 class="ctrl-title">AUTO</h2>
+        <button id="autoBtn" class="btn btn-auto active" title="El técnico de luces decide modo y paleta según la música">◈ ON</button>
+        <div id="autoStatus" class="auto-status">EN ESPERA</div>
+      </section>
+
+      <section class="ctrl-section">
+        <h2 class="ctrl-title">SENSIBILIDAD</h2>
+        <input id="sensSlider" type="range" min="50" max="200" value="100" />
+      </section>
+
+      <section id="modeSection" class="ctrl-section">
+        <h2 class="ctrl-title">MODO</h2>
+        <div id="modeGrid" class="option-grid">
+          <button class="opt-btn active" data-mode="flash">FLASH</button>
+          <button class="opt-btn" data-mode="alterno">ALTERNO</button>
+          <button class="opt-btn" data-mode="aleatorio">ALEATORIO</button>
+          <button class="opt-btn" data-mode="secuencia">SECUENCIA</button>
+          <button class="opt-btn" data-mode="strobe">ESTROBO</button>
+        </div>
+      </section>
+
+      <section id="paletteSection" class="ctrl-section">
+        <h2 class="ctrl-title">PALETA</h2>
+        <div id="paletteGrid" class="palette-grid"></div>
+      </section>
+
+      <section class="ctrl-section">
+        <h2 class="ctrl-title">ZONAS</h2>
+        <div id="zoneGrid" class="option-grid option-grid-4">
+          <button class="opt-btn" data-zones="1">1</button>
+          <button class="opt-btn" data-zones="6">6</button>
+          <button class="opt-btn" data-zones="9">9</button>
+          <button class="opt-btn" data-zones="12">12</button>
+        </div>
+      </section>
+
+      <section class="ctrl-section ctrl-meters">
+        <div class="meters">
+          <div class="meter"><div class="meter-track"><div id="mSub" class="meter-fill"></div></div></div>
+          <div class="meter"><div class="meter-track"><div id="mBass" class="meter-fill"></div></div></div>
+          <div class="meter"><div class="meter-track"><div id="mMid" class="meter-fill"></div></div></div>
+          <div class="meter"><div class="meter-track"><div id="mTre" class="meter-fill"></div></div></div>
+        </div>
+      </section>
+    </aside>
+
+    <main id="stageWrap">
+      <div id="stage"></div>
+      <div id="fsHint">ESC PARA SALIR</div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
